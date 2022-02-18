@@ -6,13 +6,7 @@
 
 body {
     font-family: sans-serif;
-    background-image: url(9.png);
-    
-    background-size: 1365px 600px;
-    background-position: center;
-    background-repeat: no-repeat;
     background-color:#c3c4ce;
-  /**  #c0c3d6;*/
    
 
 }
@@ -199,21 +193,26 @@ a {
     }
 }
 .content{
-    margin-left: 12%;
-    margin-top: 20%;
+    background-image: url(i2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 450px;
     
 }
 .content h1{
     font-size: 50px;
     font-weight: 200;
-    margin-top: 24px;
-    margin-bottom: 15px;
+    padding-top: 165px;
+    padding-left: 50px;
     color: #232d60;
     line-height: 0.5em;
 }
 .content p{
     font-size: 20px;
     color: #6a7199;
+    padding-top: 20px;
+    padding-left: 50px;
 
 }
 
@@ -222,6 +221,7 @@ a {
     background:#3b2520;
     border-radius: 6px;
     padding: 10px 20px;
+    margin-left: 50px;
     box-sizing: border-box;
     text-decoration: none;
     color: #ececec;
@@ -229,6 +229,6 @@ a {
 }
 .eduinst{
     margin-left: 12%;
-    margin-top: 16%;
+    margin-top: 1.5%;
     
 }
