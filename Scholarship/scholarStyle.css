@@ -198,3 +198,37 @@ a {
         padding-right: 0;
     }
 }
+.content{
+    margin-left: 12%;
+    margin-top: 20%;
+    
+}
+.content h1{
+    font-size: 50px;
+    font-weight: 200;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+    line-height: 0.5em;
+}
+.content p{
+    font-size: 20px;
+    color: #6a7199;
+
+}
+
+.content .btn{
+    display: inline-block;
+    background:#3b2520;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ececec;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+.eduinst{
+    margin-left: 12%;
+    margin-top: 16%;
+    
+}
