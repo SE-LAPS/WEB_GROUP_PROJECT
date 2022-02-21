@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="navbar.css">
+<!--  <link rel="stylesheet" href="footer.css">  -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(219, 223, 223);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 1100px;
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+  
+  resize: vertical;
+}
+
+input[type=Chat] {
+  background-color: #04AA6D;
+  color: white;
+  text-align: center;
+  padding: 12px 2px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=Chat]:hover {
+  background-color: #45a049;
+}
+/**
+.rectangle1 {
+  float: left;
+  height: 230px;
+  width: 400px;
+  top: 70%;
+  text-align: left;
+  background-color: #555;
+  
+}
+
+.rectangle2 {
+  float: right;
+    height: 230px;
+    width: 400px;
+    top: 70%;
+    text-align: center;
+    background-color: #555;
+    position: relative;
+    margin: 12px 8px;
+}*/
+#left{
+  float: left;
+  background: #696d6b;
+  padding: 20px 20px;
+}
+#right{
+  float: right;
+  background: #696d6b;
+  padding: 20px 20px;
+}
+
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  padding: 5px;
+  background-image: url('11.PNG');
+  background-repeat: no-repeat;
+
+ 
+
+  
+  
+  
+
+  
+}
+.container h2{
+  text-align: left;
+  
+  font-family: sans-serif;
+  font-style: italic;
+ 
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 12px;
+  padding: 30px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=Chat] {
+    width: 100%;
+    margin-top: 0;
+    
+  }
+
+.h2{
+    text-align:center;
+    font-size: 25px;
+    text-decoration: wavy;
+}
+
+
+
+}
+</style>
+</head>
+<body>
+
+<!--  <h2>The header - Nav Bar</h2>  -->
+<nav>
+  <ul class="menu">
+      <li class="logo"><img src="l2.png" alt="FreeLearn"
+          ></li>
+      <li class="item"><a href="#">HOME</a></li>
+      <li class="item"><a href="#">ABOUT</a></li>
+      <li class="item"><a href="#">BLOG</a></li>
+      <li class="item"><a href="#">HELP</a></li>
+
+      <li class="item button"><a href="#">Log In</a></li>
+      <li class="item button secondary"><a href="#">Sign Up</a></li>
+      <li class="toggle"><span class="bars"></span></li>
+  </ul>
+</nav>
+<!--end of nav bar-->
+
+<div class="container">
+  <div >
+    <h2>How can we help you?</h2>
+  </div>
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  
+  
+  
+  
+  
+
+
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Frequently Asked Questions?</label>
+        <input type="text" id="fname" name="firstname" placeholder="eg: Scholarships,FreeLearn">
+        <br></br>
+        
+    
+        <div class="container-one">
+            <div style="text-align:center">
+              <h2>FreeLearn</h2>
+            </div>
+            
+
+        
+            <!-- <label for="country">What is free learn?</label> -->
+        <select id="country" name="country">
+          <option value="australia">What is free learn?</option>
+          <option value="australia">Free Learn is FreeLearn's very own loyalty program.By signing up to Free Learn you can get the whole syllabus of all subjects and also you can win scholarships in reputed institutions by doing exams.</option>
+        </select>
+        
+         <!--  <label for="country">How do I sign up?</label>  -->
+        <select id="country" name="country">
+          <option value="australia">How do I sign up?</option>
+          <option value="australia">To win scholarships and do exams you shouls sign up to the FreeLearn.You can tap the sign up button on navigation bar and signup for the free learn.Note that a valid , SL based phone number or valid E-mail is required to join Free Learn.</option>
+          
+        </select>
+        
+         <!--<label for="country">Does it cost to join Free Learn?</label>  -->
+        <select id="country" name="country">
+          <option value="australia">Does it cost to join Free Learn?</option>
+          <option value="australia">Nope.<br></br>Free Learn is FREE of charge.All you need to do is visit the site and signup.</option>
+        </select>
+        
+         <!-- <label for="country">How do I collect scholarships?</label>  -->
+        <select id="country" name="country">
+          <option value="australia">How do I collect scholarships?</option>
+          <option value="australia">Write an exam.Then if you passed the exam you will win a scholarship.</option>
+          
+        </select>
+        
+         <!--  <label for="country">How much are my scholarships worth?</label>  -->
+        <select id="country" name="country">
+          <option value="australia">How much are my scholarships worth?</option>
+          <option value="australia">Win a very worth scholarships to you or your loved children from the biggest online school.This worth a lot for your higher studies and for your job field in the near future. </option>
+          
+        </select>
+        
+         <!--<label for="country">How we give scholarships?</label>  -->
+        <select id="country" name="country">
+          <option value="australia">How we give scholarships?</option>
+          <option value="australia">If you write an exam and passed we will give you a scholarship.</option>
+          
+        </select>
+        
+         <!--  <label for="country">What are the institutes that we give scholarships?</label>  -->
+        <select id="country" name="country">
+          <option value="australia">What are the institutes that we give scholarships?</option>
+          <option value="australia">NSBM , NIBM , SLTC , SLIIT , IIT , Saegies , Udemy etc</option>
+          
+        </select>
+        
+         <!--  <label for="country">What should I do if I have more questions about free learn?</label>  -->
+        <select id="country" name="country">
+          <option value="australia">What should I do if I have more questions about free learn?</option>
+          <option value="australia">You can ask it in the chat or you can ask it in the feedback area. </option>
+          
+        </select>
+        
+        <br></br>
+       
+        <div class="container-one">
+            <div style="text-align:center">
+              <h2>Account</h2>
+            </div>
+            
+
+            <!--  <label for="country">Where can I find my scholarships?</label>  -->
+            <select id="country" name="country">
+              <option value="australia">Where can I find my scholarships?</option>
+              <option value="australia">After you signup , you will be created an account in Free Learn. There will be your grades and scholarships.</option>
+              
+            </select>
+
+            <!--  <label for="country">How do I change the e-mail address in my Free Learn account? </label>  -->
+            <select id="country" name="country">
+              <option value="australia">How do I change the e-mail address in my Free Learn account?</option>
+              <option value="australia">You can create a new account instead of that.</option>
+             
+            </select>
+
+            <!--  <label for="country">How do I reset mypassword?</label>  -->
+            <select id="country" name="country">
+              <option value="australia">How do I reset mypassword?</option>
+              <option value="australia">Thare's an button called forget password in the Login area. From that you can change the password.</option>
+             
+            </select>
+            
+            
+
+            <br> </br>
+            <br> </br>
+            <br> </br>
+            <br> </br>
+        
+           <!-- <div class="rectangle1">  -->
+             <section id="center">
+                <section id="left">
+                  <div style="text-align:center">
+                    <br> </br>
+                  <h3>Chat with FreeLearn</h3>
+                  <br></br>
+                  <h4>Ask Your Questions Here?</h4>
+                  <br></br>
+                  <input type="Chat" value="Chat">
+                
+                </section>
+
+              
+                
+              
+            
+
+                <section id="right">
+                    <div style="text-align:center">
+                      <br> </br>
+                    <h3>Questions or Feedback</h3>
+                    <br></br>
+                    <h4>Let us know !</h4>
+                    <br></br>
+                    <input type="Chat" value="Give FeedBack">
+                  </div>
+                </section>
+              </section>
+
+           
+      
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--Start of the footer-->
+<!-- 
+<footer class="footer theme-bg-primary wow rollIn">
+  <div class="" container py-5 ">
+              <div class="row " style="margin-left:50px; ">
+              <div class="col-lg-3 ">
+                  <h4 class="col-heading ">COMPANY</h4>
+                  <br></br>
+                 <ul>
+                      <li><a href=" ">About</a></li>
+                      <li><a href=" ">Careers</a></li>
+                      <li><a href=" ">Blog</a></li>
+                      <li><a href=" ">How we work </a></li>
+                      <li><a href=" ">Other</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 ">
+                  <h4 class="col-heading ">CONTACT</h4>
+                  <br></br>
+                  <ul>
+                      <li><a href=" ">Help/FAQ</a></li>
+                      <li><a href=" ">Affiliates</a></li>
+                      <li><a href=" ">Professors</a></li>
+                      <li><a href=" ">Other</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 ">
+                  <h4 class="col-heading ">MORE</h4>
+                  <br></br>
+                  <ul>
+                      <li><a href=" ">Free Courses</a></li>
+                      <li><a href=" ">Badges & Certificates</a></li>
+                      <li><a href=" ">Other</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 ">
+                  <h4 class="col-heading ">SOCIAL_LIST</h4>
+                  <br></br>
+                 <ul class="social-list ">
+                     <li class="list-inline-item ">
+                         <a href=" ">
+                             <i class="fa fa-instagram "></i>
+                             <li><a href=" ">instagram</a></li>
+                         </a>
+                     </li>
+
+                     <li class="list-inline-item ">
+                      <a href=" ">
+                          <i class="fa fa-twitter "></i>
+                          <li><a href=" ">twitter</a></li>
+                      </a>
+                  </li>
+
+                  <li class="list-inline-item ">
+                      <a href=" ">
+                          <i class="fa fa-facebook "></i>
+                          <li><a href=" ">facebook</a></li>
+                      </a>
+                  </li>
+
+                  <li class="list-inline-item ">
+                      <a href=" ">
+                          <i class="fa fa-linkedin "></i>
+                          <li><a href=" ">linkedin</a></li>
+                      </a>
+                  </li>
+                 </ul>
+              </div>
+              </div>
+              </div>
+
+
+              <div class="container ">
+                  <hr>
+              </div>
+
+              <div>
+                  <div class="container text-center ">
+                      <h3 class="mb-3 ">Get the App</h3>
+                      <div class="section-intro mb-4 mx-auto ">
+                          ..Download Our App now..
+                          <br>..This is Sri-Lankan Number One Largest Online Educational Website..</br>
+                      </div>
+                      <ul class="d-inline-block ">
+                          <li class="list-inline-item mr-3 ">
+                              <a href=" ">
+                                  <img src="2.png " alt=" " class="ios "
+                              </a>
+                          </li>
+                         
+                          <li class="list-inline-item mr-3 ">
+                              <a href=" ">
+                                  <img src="1.png " alt=" " class="android "
+                              </a>
+                          </li>
+
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="footer-bottom text-center pb-5 ">
+                  <small class="copyright ">
+                      ..Designed with <i class="fa fa-pencil " style="color: red; ">
+      </i>
+      by <a href=" ">FreeLearn</a> for developers..
+      </small>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js "></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+-->
+<!--End of the footer-->
+
+</body>
+</html>
