@@ -1,8 +1,13 @@
- <html>
+<html>
+    <html lang="en">
     <head>
         <html lang="en">
-<link rel="stylesheet" type="text/css" href="navbar.css">
- <meta name="viewport" content="width=device-width, initial-scale=1">  
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Navbar</title>
+
+        </head>
         <style>
 /*nav bar start*/
         * {
@@ -48,7 +53,7 @@
   background-color: #0a0f4d;
   border: none;
   color: rgb(238, 234, 241);
-  padding: 60px 100px;  
+  padding: 80px 150px;  
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -249,18 +254,13 @@
                 padding-right: 0;
             }
         }
-
-
-
-
-
-
         
         </style>
     </head>
 
     <body>
         <!--nav bar start-->
+
         <nav>
             <ul class="menu">
                 <li class="logo"><img src="l2.png" alt="FreeLearn"
@@ -276,10 +276,13 @@
             </ul>
         </nav>
 
-
-
-
         <!--nav bar end-->
+
+
+
+
+
+
 
           <!--Button start-->
        
@@ -302,21 +305,39 @@
 </br>
     </div>
     <div class="level2">
+        
     <p>
    
-        <button class="button button1">Chemistry</button>
-        <button class="button button2">Physics</button>
-        <button class="button button1">Combined Maths</button>
-        <button class="button button1">Biology</button>
-        <button class="button button1">ICT</button>
-        <button class="button button1">Agriculture</button>
+        <button class="button button1" onclick="window.location.href='file:///C:/Users/ACER/Desktop/AL%20stream/Science/Science.html';">Grade 12</button>
+        <button class="button button2" onclick="window.location.href='file:///C:/Users/ACER/Desktop/AL%20stream/Science/Science.html';">Grade 13</button>
         </p>
 
         </div>
+    
+
+<!-- jquery cdn link  -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+<!-- custom js link  -->
+
+<script>
+
+$(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
 
 
-        
 
+
+
+
+</script>
 
 
     </body>
