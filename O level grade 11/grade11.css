@@ -1,0 +1,33 @@
+.level001{
+    width: 800px;
+    margin-left: 300px;
+}
+#leftleft{
+    float: left;
+    padding: 20px 20px;
+}
+
+#rightright{
+    float: right;
+    padding: 20px 20px;    
+}
+.buttons{
+    background-color: rgb(170, 170, 170);
+    border: 7px rgb(73, 73, 73) solid;
+    /*padding: 20px 15px;*/
+    font-size: 20px;
+    height: 70px;
+    width: 240px;
+    border-radius: 15px;
+    
+}
+.buttons:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+.level11{
+    text-align: center;
+    font-size: 25px;
+}

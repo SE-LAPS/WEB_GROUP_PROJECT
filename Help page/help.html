@@ -3,8 +3,13 @@
 <head>
 
 <link rel="stylesheet" href="navbar.css">
-<!--  <link rel="stylesheet" href="footer.css">  -->
 
+
+<!--Google fonts-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+  </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -42,32 +47,13 @@ input[type=Chat] {
 input[type=Chat]:hover {
   background-color: #45a049;
 }
-/**
-.rectangle1 {
-  float: left;
-  height: 230px;
-  width: 400px;
-  top: 70%;
-  text-align: left;
-  background-color: #555;
-  
-}
-
-.rectangle2 {
-  float: right;
-    height: 230px;
-    width: 400px;
-    top: 70%;
-    text-align: center;
-    background-color: #555;
-    position: relative;
-    margin: 12px 8px;
-}*/
+/*chat rectangle*/
 #left{
   float: left;
   background: #696d6b;
   padding: 20px 20px;
 }
+/*Feedback rectangle*/
 #right{
   float: right;
   background: #696d6b;
@@ -81,20 +67,20 @@ input[type=Chat]:hover {
   padding: 5px;
   background-image: url('11.PNG');
   background-repeat: no-repeat;
-
- 
-
-  
-  
-  
-
-  
+  background-size: cover;
+  background-position-y: -2cm;
+  height: 400px; 
 }
+/*How can we help part*/
 .container h2{
   text-align: left;
-  
-  font-family: sans-serif;
+  padding-top: 170px;
+  font-family: anton;
   font-style: italic;
+  padding-left: 30px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  
  
 }
 
@@ -102,10 +88,29 @@ input[type=Chat]:hover {
 .column {
   float: left;
   width: 50%;
-  margin-top: 12px;
   padding: 30px;
+  margin-top: 190px;
   
 }
+/*FAQ part*/
+.feq{
+  padding-left: 100px;
+  font-family: Barlow Condensed;
+  font-weight: 1000;
+  font-size: 25px;
+}
+
+/*Account Section*/
+.container-one{
+  
+  padding-top: -100px;
+  margin-top: -100px;
+}
+
+.container-one h2{
+  padding-left: 100px;
+}
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -121,15 +126,6 @@ input[type=Chat]:hover {
     margin-top: 0;
     
   }
-
-.h2{
-    text-align:center;
-    font-size: 25px;
-    text-decoration: wavy;
-}
-
-
-
 }
 </style>
 </head>
@@ -157,29 +153,15 @@ input[type=Chat]:hover {
     <h2>How can we help you?</h2>
   </div>
 
-  <br></br>
-  <br></br>
-  <br></br>
-  <br></br>
-  <br></br>
-  <br></br>
-  <br></br>
-  
-  
-  
-  
-  
-
-
     <div class="column">
       <form action="/action_page.php">
-        <label for="fname">Frequently Asked Questions?</label>
+        <div class="feq"><label for="fname">Frequently Asked Questions?</label></div>
         <input type="text" id="fname" name="firstname" placeholder="eg: Scholarships,FreeLearn">
-        <br></br>
+        
         
     
         <div class="container-one">
-            <div style="text-align:center">
+            <div>
               <h2>FreeLearn</h2>
             </div>
             
@@ -275,7 +257,7 @@ input[type=Chat]:hover {
             <br> </br>
             <br> </br>
         
-           <!-- <div class="rectangle1">  -->
+           
              <section id="center">
                 <section id="left">
                   <div style="text-align:center">
@@ -288,7 +270,7 @@ input[type=Chat]:hover {
                 
                 </section>
 
-              
+            
                 
               
             
@@ -304,132 +286,17 @@ input[type=Chat]:hover {
                   </div>
                 </section>
               </section>
-
+          
            
       
         
       </form>
     </div>
   </div>
+
 </div>
 
-<!--Start of the footer-->
-<!-- 
-<footer class="footer theme-bg-primary wow rollIn">
-  <div class="" container py-5 ">
-              <div class="row " style="margin-left:50px; ">
-              <div class="col-lg-3 ">
-                  <h4 class="col-heading ">COMPANY</h4>
-                  <br></br>
-                 <ul>
-                      <li><a href=" ">About</a></li>
-                      <li><a href=" ">Careers</a></li>
-                      <li><a href=" ">Blog</a></li>
-                      <li><a href=" ">How we work </a></li>
-                      <li><a href=" ">Other</a></li>
-                  </ul>
-              </div>
 
-              <div class="col-lg-3 ">
-                  <h4 class="col-heading ">CONTACT</h4>
-                  <br></br>
-                  <ul>
-                      <li><a href=" ">Help/FAQ</a></li>
-                      <li><a href=" ">Affiliates</a></li>
-                      <li><a href=" ">Professors</a></li>
-                      <li><a href=" ">Other</a></li>
-                  </ul>
-              </div>
-
-              <div class="col-lg-3 ">
-                  <h4 class="col-heading ">MORE</h4>
-                  <br></br>
-                  <ul>
-                      <li><a href=" ">Free Courses</a></li>
-                      <li><a href=" ">Badges & Certificates</a></li>
-                      <li><a href=" ">Other</a></li>
-                  </ul>
-              </div>
-
-              <div class="col-lg-3 ">
-                  <h4 class="col-heading ">SOCIAL_LIST</h4>
-                  <br></br>
-                 <ul class="social-list ">
-                     <li class="list-inline-item ">
-                         <a href=" ">
-                             <i class="fa fa-instagram "></i>
-                             <li><a href=" ">instagram</a></li>
-                         </a>
-                     </li>
-
-                     <li class="list-inline-item ">
-                      <a href=" ">
-                          <i class="fa fa-twitter "></i>
-                          <li><a href=" ">twitter</a></li>
-                      </a>
-                  </li>
-
-                  <li class="list-inline-item ">
-                      <a href=" ">
-                          <i class="fa fa-facebook "></i>
-                          <li><a href=" ">facebook</a></li>
-                      </a>
-                  </li>
-
-                  <li class="list-inline-item ">
-                      <a href=" ">
-                          <i class="fa fa-linkedin "></i>
-                          <li><a href=" ">linkedin</a></li>
-                      </a>
-                  </li>
-                 </ul>
-              </div>
-              </div>
-              </div>
-
-
-              <div class="container ">
-                  <hr>
-              </div>
-
-              <div>
-                  <div class="container text-center ">
-                      <h3 class="mb-3 ">Get the App</h3>
-                      <div class="section-intro mb-4 mx-auto ">
-                          ..Download Our App now..
-                          <br>..This is Sri-Lankan Number One Largest Online Educational Website..</br>
-                      </div>
-                      <ul class="d-inline-block ">
-                          <li class="list-inline-item mr-3 ">
-                              <a href=" ">
-                                  <img src="2.png " alt=" " class="ios "
-                              </a>
-                          </li>
-                         
-                          <li class="list-inline-item mr-3 ">
-                              <a href=" ">
-                                  <img src="1.png " alt=" " class="android "
-                              </a>
-                          </li>
-
-                      </ul>
-                  </div>
-              </div>
-
-              <div class="footer-bottom text-center pb-5 ">
-                  <small class="copyright ">
-                      ..Designed with <i class="fa fa-pencil " style="color: red; ">
-      </i>
-      by <a href=" ">FreeLearn</a> for developers..
-      </small>
-  </div>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.6.0.js "></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
--->
-<!--End of the footer-->
 
 </body>
 </html>
