@@ -6,7 +6,7 @@
 
 body {
     font-family: sans-serif;
-    background-color:#c3c4ce;
+    background-color:#ffffff;
    
 
 }
@@ -17,9 +17,6 @@ nav {
     font-weight: 500;
 }
 
-ul {
-    list-style-type: none;
-}
 
 a {
     color: rgb(255, 255, 255);
@@ -249,4 +246,16 @@ a {
     background-color: #10173d;
     padding: 10px;
     line-height: 5em;
+}
+#right{
+    float: right;
+    width: 70%;
+    color: #000000;
+    padding-left: 10px;
+}
+#right ul{
+    padding-left: 40px;
+}
+#sub2 p{
+    font-weight: 500;
 }
