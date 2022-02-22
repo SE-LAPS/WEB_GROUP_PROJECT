@@ -232,3 +232,21 @@ a {
     margin-top: 1.5%;
     
 }
+.c2{
+    
+    margin: auto;
+    overflow: hidden;
+    padding: 3px;
+    font-family:'Poppins', sans-serif;
+  
+}
+#left{
+    float: left;
+    width: 30%;
+    height: 450px;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #10173d;
+    padding: 10px;
+    line-height: 5em;
+}
