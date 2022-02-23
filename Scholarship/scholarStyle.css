@@ -190,7 +190,6 @@ a {
     }
 }
 .content{
-    background-image: url(i2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,12 +201,12 @@ a {
     font-weight: 200;
     padding-top: 165px;
     padding-left: 50px;
-    color: #232d60;
+    color: #bbbaba;
     line-height: 0.5em;
 }
 .content p{
     font-size: 20px;
-    color: #6a7199;
+    color: #b3b4b8;
     padding-top: 20px;
     padding-left: 50px;
 
