@@ -1,13 +1,15 @@
-<html>
-    <html lang="en">
+ <html>
     <head>
-        <html lang="en">
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Navbar</title>
 
-        </head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="Web_Group_Project.css">
+
+        <html lang="en">
+<link rel="stylesheet" type="text/css" href="navbar.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">  
         <style>
 /*nav bar start*/
         * {
@@ -49,18 +51,21 @@
 
  /* -button section */
 
- .button {
+.buttonsss{
   background-color: #0a0f4d;
-  border: none;
   color: rgb(238, 234, 241);
-  padding: 80px 150px;  
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   margin: 25px 18px;
-  cursor: pointer;
+  height: 120px;
+  width: 300px;
+  border: 7px rgb(160, 158, 158) solid;
+}
 
+.buttonsss:hover{
+    background-color: #868585;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform: scale(1.2);
 }
 
 .level
@@ -85,11 +90,11 @@
 
 .button1 {
   border-radius: 4px;
-  font-size: 35px;
+  font-size: 25px;
 }
 .button2 {
   border-radius: 4px;
-  font-size: 35px;
+  font-size: 25px;
 }
 
         /**
@@ -254,13 +259,18 @@
                 padding-right: 0;
             }
         }
+
+
+
+
+
+
         
         </style>
     </head>
 
     <body>
         <!--nav bar start-->
-
         <nav>
             <ul class="menu">
                 <li class="logo"><img src="l2.png" alt="FreeLearn"
@@ -276,13 +286,10 @@
             </ul>
         </nav>
 
+
+
+
         <!--nav bar end-->
-
-
-
-
-
-
 
           <!--Button start-->
        
@@ -300,44 +307,30 @@
     <div class="level1">
         <br>
     <br>
-    <h2>Commerce Stream</h2>
+    <h2>Art Stream</h2>
 </br>
 </br>
     </div>
     <div class="level2">
-        
-    <p>
+    
    
-        <button class="button button1" onclick="window.location.href='file:///C:/Users/ACER/Desktop/AL%20stream/Commerce/commerce.html';">Grade 12</button>
-        <button class="button button2" onclick="window.location.href='file:///C:/Users/ACER/Desktop/AL%20stream/Commerce/commerce.html';">Grade 13</button>
-        </p>
-
-        </div>
+        <button class="buttonsss button1">Sinhala</button>
+        <button class="buttonsss button1">Communication & Media</button>
+        <button class="buttonsss button1">Geogrophy</button>
+        <button class="buttonsss button1">Politics</button>
+        <button class="buttonsss button1">Home Science</button>
+        <button class="buttonsss button1">Religion</button>
     
 
-<!-- jquery cdn link  -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    </div>
 
-<!-- custom js link  -->
+        <!-- jquery cdn link  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 
-<script>
+    <!-- custom js link  -->
+    <script src="Web_Group_Project.js"></script>
+        
 
-$(function() {
-    $(".toggle").on("click", function() {
-        if ($(".item").hasClass("active")) {
-            $(".item").removeClass("active");
-        } else {
-            $(".item").addClass("active");
-        }
-    });
-});
-
-
-
-
-
-
-</script>
 
 
     </body>
