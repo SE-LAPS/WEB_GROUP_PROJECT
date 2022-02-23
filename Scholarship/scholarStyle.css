@@ -224,6 +224,14 @@ a {
     color: #ececec;
     box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
 }
+.applybtn{
+    text-align: center;
+    color: #000000;
+    background: #130a3f;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+}
 .eduinst{
     margin-left: 12%;
     margin-top: 1.5%;
