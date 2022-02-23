@@ -7,7 +7,7 @@
     <title>Navbar</title>
 
     <link rel="stylesheet" href="scholarStyle.css">
-    <link rel="script" href="../testschjS.js">
+    
 
     <!--google fonts link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,9 +70,81 @@
                 </ul>
                 <p>Submit your details below and one of our enrolment advisers 
                     will get back to you with next steps. <br>Enrol now!</p>
-                    <h1>ADD the FORUM</h1>
+                    <h1>Leave your details below</h1>
                </section>
                <br>
+               <div class="applyform">
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" placeholder="Enter first name" required>
+                        </div>
+                        <div class="input-box">
+                         <span class="details">Last Name</span>
+                         <input type="text" placeholder="Enter Last name" required>
+                         </div>
+                        <div class="input-box">
+                         <span class="details">Email</span>
+                         <input type="text" placeholder="Enter your Email" required>
+                         </div>
+                         <div class="input-box">
+                            <span class="details">Mobile phone contact</span>
+                            <input type="text" placeholder="Enter your number" required>
+                        </div>
+
+                         <div class="input-box">
+                             <span class="details">Course Applied For</span>
+                             <div class="container">
+                                 
+                           
+                                 <div class="select-box">
+                                   <div class="options-container">
+                                     <div class="option">
+                                       <input
+                                         type="radio"
+                                         class="radio"
+                                         id="foundation"
+                                         name="category"
+                                       />
+                                       <label for="foundation">Foundation Studies</label>
+                                     </div>
+                           
+                                     <div class="option">
+                                       <input type="radio" class="radio" id="DipBuiss" name="category" />
+                                       <label for="DipBuiss">Diploma of Business</label>
+                                     </div>
+                           
+                                     <div class="option">
+                                       <input type="radio" class="radio" id="DipIt" name="category" />
+                                       <label for="DipIt">Diploma of Information Technology</label>
+                                     </div>
+                           
+                                     <div class="option">
+                                       <input type="radio" class="radio" id="DipEng" name="category" />
+                                       <label for="DipEng">Diploma of English</label>
+                                     </div>
+                           
+                                     <div class="option">
+                                       <input type="radio" class="radio" id="DipEngin" name="category" />
+                                       <label for="DipEngin">Diploma in Engineering</label>
+                                     </div>
+                           
+                                   </div>
+                           
+                                   <div class="selected">
+                                     <span class="details">Select course</span>
+                                   </div>
+                                 </div>
+                             </div>
+                         </div>
+                         </div>
+                    <div class="formbutton">
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+                </div>
                <hr>
                <br>
 
@@ -139,6 +211,8 @@
 
         
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
