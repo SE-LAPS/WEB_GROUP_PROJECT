@@ -1,0 +1,33 @@
+.level01{
+    width: 800px;
+    margin-left: 300px;
+}
+#left{
+    float: left;
+    padding: 20px 20px;
+}
+
+#right{
+    float: right;
+    padding: 20px 20px;    
+}
+.buttons{
+    background-color: #0a0f4d;
+    border: 7px rgb(73, 73, 73) solid;
+    /*padding: 20px 15px;*/
+    font-size: 20px;
+    height: 90px;
+    width: 260px;
+    border-radius: 15px;
+    color: rgb(238 , 234 , 241);
+}
+.buttons:hover{
+    background-color: #868585;
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+.level{
+    text-align: center;
+    font-size: 25px;
+}
