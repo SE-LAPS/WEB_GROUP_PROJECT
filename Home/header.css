@@ -1,0 +1,86 @@
+section {
+    padding: 0rem 0%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 20rem solid #10221b;
+    color: #000000;
+    cursor: pointer;
+    font-size: 3.7rem;
+    text-shadow: 6px 0px 6px #000000;
+    font-weight: bold;
+    padding: 1rem 3rem;
+}
+
+.btn:hover {
+    background: rgb(175, 22, 142);
+    color: rgb(200, 255, 0);
+}
+
+.home .box {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-size: cover !important;
+    background-position: left !important;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: center;
+    padding: 0rem 28%;
+}
+
+.home .box.second {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    background-position: left !important;
+}
+
+.home .box .content {
+    width: 50rem;
+    text-align: left;
+}
+
+.home .box .content span {
+    font-size: 3rem;
+    color: #0f0046;
+    font-weight: bold;
+}
+
+.home .box .content h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-shadow: 2px -2px 8px #000000;
+    font-weight: bold;
+    padding-top: .5rem;
+    text-transform: uppercase;
+}
+
+.home .box .content p {
+    line-height: 2;
+    color: #f7ecfc;
+    text-shadow: -3px 0px 8px #000000;
+    font-size: .9rem;
+    padding: 1rem 0;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 3rem;
+    color: #8b0082;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 2rem;
+    }
+    section {
+        padding: 1rem 2rem;
+    }
+}
