@@ -575,9 +575,48 @@ form .formbutton input:hover{
 .link:hover{
     background-color: #000000;
 }
+.sub-nav-bar{
+   
+    height: auto;
+}
+.sub-nav-bar ul{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+
+    list-style: none;
+    text-align: center;
+   
+    
+}
+.sub-nav-bar li{
+    width: 30%;
+    background-color: #271650;
+    padding:15px;
+    margin: 5px;
+    
+}
+.sub-nav-bar a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.sub-nav-bar li:hover{
+    background-color: rgb(151, 151, 141);
+}
+
 @media all and (max-width:800px){
     .applyform{
         max-width: 100%;
+    }
+    .sub-nav-bar ul{
+        margin-bottom: 15px;
+        height: auto;
+    }
+    
+    .sub-nav-bar li{
+       width: 100%;
     }
     form .user-details .input-box{
         
