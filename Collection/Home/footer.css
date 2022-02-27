@@ -1,0 +1,122 @@
+ul li {
+    list-style: none;
+}
+
+ul {
+    margin-left: 0px;
+}
+
+body {
+    background: linear-gradient( 0deg, #fd9869 45.5%, #fec9c9 80.5%);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-weight: 400px;
+    color: rgb(236, 0, 0);
+}
+
+.footer {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: 162px;
+    font-weight: bold;
+}
+
+.theme-bg-primary {
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 0 8px 32px 0 rgba(29, 2, 21, 0.37);
+    backdrop-filter: blur(7px);
+    border: 3px solid rgba(255, 255, 255, 0.18);
+}
+
+.footer ul li a {
+    color: rgb(37, 0, 78);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+footer.footer .move-up {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span {
+    color: rgb(153, 0, 173);
+}
+
+footer.footer .move-up span:hover {
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+
+/* -----------------------footer content end--------------------- */
+
+
+/*----------------Viewport  <= 1130px---------------*/
+
+@media only screen and (max-width: 1130px) {
+    .site-content .post-content>.post-image .post-info {
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+    .site-content .sidebar .popular-post .post-info {
+        display: none !important;
+    }
+    footer.footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*-------------End viewport < 1130px----------*/
+
+
+/*-----------Viewport <= 750px--------------*/
+
+@media only screen and (max-width: 750px) {
+    .nav .nav-menu,
+    .nav .nav-items {
+        flex-direction: column;
+    }
+    .nav .toggle-collapse {
+        display: initial;
+    }
+    main .site-content {
+        grid-template-columns: 100%;
+    }
+    footer.footer .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* ----------End viewport <= 750px---------------*/
+
+
+/*-----------Viewport <=  520px---------------*/
+
+@media only screen and (max-width: 520px) {
+    main .blog {
+        height: 125vh;
+    }
+    .site-content .post-content>.post-image .post-info {
+        display: none;
+    }
+    footer.footer .container>div {
+        padding: 1rem .9rem !important;
+    }
+    footer .rights {
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+    nav .toggle-collapse {
+        width: 80% !important;
+    }
+}
+
+
+/*----------- End viewport <=  520px---------------*/
