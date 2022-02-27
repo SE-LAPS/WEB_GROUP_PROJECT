@@ -2,14 +2,34 @@
 <html lang="en">
   <head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+
+    <!--  css file cdn link  -->
+    <link rel="stylesheet" href="Web_Group_Project.css">
+
     <style>
+	
+	
+		.onenav
+		{
+		
+		position:absolute;
+		top:1px;
+		width:1535px;
+		
+		
+		
+		}
 
       .aboutus
       {
         
         position:fixed;
         text-align: center;
-        top:10px;
+        top:120px;
         font-size: 40px;
                 
       }
@@ -17,7 +37,7 @@
      .box
      {
        position:absolute;
-       top:150px;
+       top:200px;
      }
 
     </style>
@@ -30,6 +50,24 @@
   </head>
 
   <body>
+
+
+
+    <nav class="onenav">
+      <ul class="menu">
+          <li class="logo"><img src="l2.png" alt="FreeLearn"></li>
+          <li class="item"><a href="#">HOME</a></li>
+          <li class="item"><a href="#">ABOUT</a></li>
+          <li class="item"><a href="#">BLOG</a></li>
+          <li class="item"><a href="#">HELP</a></li>
+
+          <li class="item button"><a href="#">Log In</a></li>
+          <li class="item button secondary"><a href="#">Sign Up</a></li>
+          <li class="toggle"><span class="bars"></span></li>
+      </ul>
+  </nav>
+
+
 
     <div class="aboutus ">
 
@@ -84,5 +122,12 @@
       </div>
     </div>
   </div>
+
+<!-- jquery cdn link  -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+<!-- custom js link  -->
+<script src="Web_Group_Project.js"></script>
+
   </body>
 </html>
