@@ -1,0 +1,271 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+
+    <link rel="stylesheet" href="scholarStyle.css">
+    <link rel="script" href="../testschjS.js">
+
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><img src="l2.png" alt="FreeLearn"
+                ></li>
+            <li class="item"><a href="#">HOME</a></li>
+            <li class="item"><a href="#">ABOUT</a></li>
+            <li class="item"><a href="#">BLOG</a></li>
+            <li class="item"><a href="#">HELP</a></li>
+
+            <li class="item button"><a href="#">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <main>
+        <a href="#" style="position:fixed;bottom:0;color:teal;display:block;text-align:center;font-size:1em"></a>
+    </main>
+
+    <div class="content"  style="background-image: url(11.jpg); opacity: 0.8;">
+        <h1>SCHOLARSHIPS</h1>
+        <p>For a better future!</p><br/>
+    </div>
+<!--page devided to two sections, c2 is the class, #left is left side and #right is right-->
+    <div class="c2">
+        <!--section left-->
+        <section id="left">
+            <hr>
+            <p><a href="Courses.html">Courses and Programs</a></p>
+            <hr>
+            <p><a href="scholar.html">Enoll Now with pending A/L or O/L results</a></p>
+            <hr>
+            <p><a href="Enrol.html">Enrol Now</a></p>
+            <hr>
+            <p><a href="Howtoapply.html">How to apply</a></p><hr>
+            <p><a href="Scho.html">Scholarships</a></p><hr>
+            <p><a href="HelpContact.html">Help and Contact</a></p>
+            <hr>
+        </section>
+
+        <!--section right-->
+        <section id="right">
+            <h4>Scholarships</h4>
+            <section id="sub2">
+                
+             <p>At FreeLearn we believe in offering students, such as yourself, 
+                 the ability to access education at a location that works for you. 
+                 Our new offering provides the opportunity for you to start your 
+                 journey with selected Sri Lankan educational institutions and in 
+                 support of this, we are pleased to 
+                 offer those scholarships.
+                 <br>
+
+                 Designed for students who are willing to study harder for a better future.
+                 Scholarships are 100% FREE and we hope you will take the maximum from it.</p>
+                  <br>
+                  <h4>institutions collobarated with us</h4>                                 
+                  <ul>
+                      <li>ESOFT Metro Campus</li>
+                      <li>Britishway English Academy</li>
+                      <li>British Council</li>
+                      <li>IIT</li>
+                      <li>BIT</li>
+                      <li>AAT</li>
+                      <li>CA</li>
+                      <li>CIMA</li>
+                  </ul>
+                  
+
+                 <br>
+                <h4>About the scholarships</h4>
+                <p>Approximately $100,000 USD in scholarships including</p>
+                <ul>
+                    <li>25 x full fee scholarships for a term</li>
+                    <li>Unlimited 25% scholarships</li>
+                </ul>
+              <br>
+                <h4>Eligibility criteria</h4>
+                <ul>
+                    <li>The offer is open to students who are completed o/l's or A/l's</li>
+                     <li>Those who are not completed o/l's, must follow the foundation courses.</li>
+                     <li>Every student will face to a common test and the top 25 students will win the scholarships.</li>
+                </ul><br>
+                <h4>Terms and Conditions</h4>
+                <ul>
+                 <li>For students who completed o/l's , a/l's within 2016-2021</li>
+                  <li>The scholarship will be applied to the student's tuition fees
+                       and shall not be offered as a cash payment nor be available as a refund </li>
+                  <li>Offer details are subject to change  </li>
+             </ul><br>
+             <h4>Apply Now</h4>
+         
+        
+        <br>
+        <!--FORM-->
+        <div class="applyform">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input type="text" placeholder="Enter first name" required>
+                    </div>
+                    <div class="input-box">
+                     <span class="details">Last Name</span>
+                     <input type="text" placeholder="Enter Last name" required>
+                 </div>
+                    <div class="input-box">
+                     <span class="details">Email</span>
+                     <input type="text" placeholder="Enter your Email" required>
+                     </div>
+
+                     <div class="input-box">
+                        <span class="details">Course Applied For</span>
+                        <div class="container">
+                            
+                      
+                            <div class="select-box">
+                              <div class="options-container">
+                                <div class="option">
+                                  <input
+                                    type="radio"
+                                    class="radio"
+                                    id="foundation"
+                                    name="category"
+                                  />
+                                  <label for="foundation">Foundation Studies</label>
+                                </div>
+                      
+                                <div class="option">
+                                  <input type="radio" class="radio" id="DipBuiss" name="category" />
+                                  <label for="DipBuiss">Diploma of Business</label>
+                                </div>
+                      
+                                <div class="option">
+                                  <input type="radio" class="radio" id="DipIt" name="category" />
+                                  <label for="DipIt">Diploma of Information Technology</label>
+                                </div>
+                      
+                                <div class="option">
+                                  <input type="radio" class="radio" id="DipEng" name="category" />
+                                  <label for="DipEng">Diploma of English</label>
+                                </div>
+                      
+                                <div class="option">
+                                  <input type="radio" class="radio" id="DipEngin" name="category" />
+                                  <label for="DipEngin">Diploma in Engineering</label>
+                                </div>
+                      
+                              </div>
+                      
+                              <div class="selected">
+                                <span class="details">Select course</span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="input-box">
+                         <span class="details">Date of Birth</span>
+                             <div class="input-box2">
+                                 
+                                 <input type="text" placeholder="Date" required>
+                                 
+                                 <input type="text" placeholder="Month" required>
+                                 
+                                 <input type="text" placeholder="Year" required>
+                             </div>
+                         </div>
+
+                     <div class="input-box">
+                         <span class="details">Country</span>
+                         <input type="text" placeholder="country" required>
+                     </div>
+                     <div class="input-box">
+                         <span class="details">Address</span>
+                         <input type="text" placeholder="Enter your address" required>
+                     </div>
+                     <div class="input-box">
+                         <span class="details">Mobile phone contact</span>
+                         <input type="text" placeholder="Enter your number" required>
+                     </div>
+                     <div class="input-box">
+                         <span class="details">Whatsapp Number</span>
+                         <input type="text" placeholder="Enter your whatsapp number" required>
+                     </div>
+
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                             <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                         <span class="dot two"></span>
+                          <span class="gender">Female</span>
+                         </label>
+                         <label for="dot-3">
+                         <span class="dot three"></span>
+                          <span class="gender">Prefer Not to say</span>
+                         </label>
+                    </div>
+                </div>
+                <div class="formbutton">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+     </section>
+             
+      
+        </section>
+
+    </div>
+
+    <div class="eduinst">
+        <img src="british1.png" alt="Britishway English Acadamy"
+        style="width: 150px; margin-right: 20px;">
+        <img src="es2.png" alt="Esoft Metro Campus"
+        style=" height: 35px; margin-right: 20px;">
+        <img src="1920px-british-council-logo.svg-.png" alt="Britishway Counsil"
+        style="width: 120px; height: 35px; margin-right: 20px;">
+        
+        <img src="IIT1.png" alt="IIT"
+        style="  margin-right: 20px;">
+        <img src="bit.png" alt="BIT"
+        style="  margin-right: 20px;">
+        
+
+        <img src="ca.png" alt="Chartered Accounts"
+        style="  margin-right: 20px;">
+        
+        <img src="aat.png" alt="aat"
+        style="  margin-right: 20px;">
+        <img src="cima.jpg" alt="CIMA"
+        style="  margin-right: 20px;">
+        
+
+        <br>
+        <br>
+        <br>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat & Feedback Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="center">
+	<div class="btns">
+	<a class="a1" href="#">Chat</a>
+	<a class="a2" href="#">Feed Back</a>			
+	</div>
+	<div class="signup-form">
+	<div class="header">What do you want?</div>
+	<div class="signup_error"></div>
+	<form action="home.html" name="signupForm" method="post" onsubmit="return signupValid()">
+	<!--  <input type="text" name="firstname" placeholder="Firstname" autocomplete="off">  -->
+	<!--  <input class="lstname" name="lastname" type="text" placeholder="Lastname" autocomplete="off">  -->	
+	<input class="email" name="email" type="text" placeholder="Enter Your Message" autocomplete="off">	
+	<!--  <input class="email" name="password" type="password" placeholder="Password" autocomplete="off">  -->
+	<input type="submit" value="Chat">  
+	</form>
+    </div>
+    <div class="login-form">
+	<div class="header header1">Your Thoughts</div>
+	<form action="">
+	<input class="email" type="text" placeholder="Give Your FeedBack">	
+	<!--  <input class="email" type="password" placeholder="Password">  -->
+	<input type="submit" value="Feedback">
+	</form>
+    </div>
+	</div>
+	<script src="script.js"></script>
+	<script src="valid.js"></script>
+
+</body>
+</html>
