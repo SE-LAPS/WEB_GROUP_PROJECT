@@ -6,7 +6,7 @@
 
 body {
     font-family: sans-serif;
-    background-color:#c3c4ce;
+    background-color:#ffffff;
    
 
 }
@@ -17,9 +17,6 @@ nav {
     font-weight: 500;
 }
 
-ul {
-    list-style-type: none;
-}
 
 a {
     color: rgb(255, 255, 255);
@@ -28,7 +25,7 @@ a {
 
 .item a:hover {
     text-decoration:none;
-    color: rgb(160, 158, 158);
+    color: rgb(160, 159, 158);
 }
 /**
 .logo a:hover {
@@ -194,7 +191,6 @@ a {
 }
 /*end of nav bar */
 .content{
-    background-image: url(i2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -206,12 +202,12 @@ a {
     font-weight: 200;
     padding-top: 165px;
     padding-left: 50px;
-    color: #232d60;
-    line-height: 0.5em;
+    color: #d3d3d3;
+    line-height: 0.8em;
 }
 .content p{
     font-size: 20px;
-    color: #6a7199;
+    color: #dadeec;
     padding-top: 20px;
     padding-left: 50px;
 
@@ -228,8 +224,424 @@ a {
     color: #ececec;
     box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
 }
+.applybtn{
+    text-align: center;
+    color: #000000;
+    background: #130a3f;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+}
 .eduinst{
-    margin-left: 12%;
-    margin-top: 1.5%;
     
+   
+    background-color: #271650;
+    width: 100%;
+    align-items: center;
+    display: block;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.eduinst .img{
+    width: 10px;
+    height:10px;
+    
+}
+.c2{
+    
+    margin: auto;
+    overflow: hidden;
+    padding: 3px;
+    font-family:'Poppins', sans-serif;
+  
+}
+#left{
+    float: left;
+    width: 30%;
+    height: 500px;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #10173d;
+    padding: 10px;
+    line-height: 5em;
+}
+#right{
+    float: right;
+    width: 70%;
+    color: #000000;
+    padding-left: 10px;
+}
+#right ul{
+    padding-left: 40px;
+}
+#sub2 p{
+    font-weight: 500;
+}
+.applyform,
+.textarea{
+    display: flex;
+    background:transparent;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d4d2d2;
+    border-radius: 10px;
+}
+.applyform form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% /2 - 20px);
+}
+form .input-box2{
+    width: 100%;
+    display: flex;
+    
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input,
+.selected,
+.textarea{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #444;
+}
+.container {
+    
+    
+  }
+  
+  .select-box {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+  }
+  
+  .select-box .options-container {
+    background: #f6f8fa;
+    color: #a19f9f;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+  
+    order: 1;
+  }
+  
+  .selected {
+   
+    font-weight: 400;
+    color: #62627c;
+    
+  }
+  
+  .selected::after {
+    content: "";
+    background: url("../scholarships/images/arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+  
+    transition: all 0.4s;
+  }
+  
+  .select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+  }
+  
+  .select-box .options-container.active + .selected::after {
+    transform: rotateX(180deg);
+    top: -6px;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background: #0d141f;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar-thumb {
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .option,
+  .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+  
+  .select-box .option:hover {
+    background: #414b57;
+  }
+  
+  .select-box label {
+    cursor: pointer;
+  }
+  
+  .select-box .option .radio {
+    display: none;
+  }
+form .gender-details .gender-title{
+    font-size: 16px;
+    font-weight: 400;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 15px;
+    width: 15px;
+    background: rgb(199, 197, 197);
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 5px solid transparent;
+    transition: all 0.3s erase;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    border-color: rgb(203, 202, 204);
+    background: #6464fa;
+}
+form input[type="radio"]{
+    display: none;
+}
+form .formbutton{
+    height: 45px;
+    margin: 45px 0;
+}
+form .formbutton input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #a3a0a0;
+}
+form .formbutton input:hover{
+    background: #353594;
+}
+
+.s1 {
+    background-color: #dce5f1;
+    width: 75%;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+.c3-1{
+    margin-left: 10px;
+    color: #406592;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.c3-2{
+    margin-left: 20px;
+    color: #696d75;
+    padding-bottom: 10px;
+}
+
+.textarea{
+    font-family: poppins;
+    width: auto;
+}
+
+#sub3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-family: poppins;
+    width: 100%;
+
+}
+
+#right h3{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #0e2244;;
+}
+ .s4{
+    width:calc(100% / 3.5 );
+    background-color: #0e2244;
+    height: 248px;
+    margin: 10px
+}
+.s4 img{
+    width: 100%;
+    height: 205px;
+    
+}
+.s4 p{
+   font-size: 15px;
+    text-align: center;
+    padding: 10px 10px;
+    color: #ffffff;
+}
+.s4 p:hover{
+    background: #304363;
+}
+#sub4{
+    display: block;
+    width: 100%;
+}
+
+#prog1{
+    float: left;
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #dac7fd;
+    height: 300px;
+    margin: 5px;
+}
+#prog2{
+    float: right;
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 300px;
+    background-color: #dac7fd;
+    margin: 5px;
+}
+ .s3{
+    width: 100%;
+  
+    padding: 5px;
+    height: 200px;
+
+}
+.link1{
+   justify-items: center;
+}
+
+.link{
+    
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #0e2244;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.link:hover{
+    background-color: #000000;
+}
+.sub-nav-bar{
+   
+    height: auto;
+}
+.sub-nav-bar ul{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+
+    list-style: none;
+    text-align: center;
+   
+    
+}
+.sub-nav-bar li{
+    width: 30%;
+    background-color: #271650;
+    padding:15px;
+    margin: 5px;
+    
+}
+.sub-nav-bar a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.sub-nav-bar li:hover{
+    background-color: rgb(151, 151, 141);
+}
+
+@media all and (max-width:800px){
+    .applyform{
+        max-width: 100%;
+    }
+    .sub-nav-bar ul{
+        margin-bottom: 15px;
+        height: auto;
+    }
+    
+    .sub-nav-bar li{
+       width: 100%;
+    }
+    form .user-details .input-box{
+        
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        
+        width: 80%;
+    }
+    .applyform form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+    #sub3{
+        max-width: 100%;
+    }
+    .s4,
+    .s3{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+   
 }
