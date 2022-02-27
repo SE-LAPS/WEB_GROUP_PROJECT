@@ -7,7 +7,7 @@ ul {
 }
 
 body {
-    background: linear-gradient( 0deg, rgb(255, 255, 255) 50%, rgb(160, 255, 169) 60%);
+    background: linear-gradient( 0deg, #fd9869 45.5%, #fec9c9 80.5%);
     height: 100vh;
     background-size: cover;
     background-position: center;
