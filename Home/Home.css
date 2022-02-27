@@ -111,12 +111,12 @@ main .title h1 {
 /*-------------------OL Carousel--------------------------- */
 
 main .blog {
-    background: url('66.png');
+    background: url('4.gif');
     background-repeat: no-repeat;
     background-position: left;
     height: 100vh;
     width: 100%;
-    background-size: 65%;
+    background-size: 75%;
     padding-top: 0rem;
 }
 
@@ -167,6 +167,12 @@ section .container .owl-nav {
 /* ------------------------Content--------------------- */
 
 main .site-content {
+    /* background: url('4.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    padding-top: 0rem;   */
     display: grid;
     grid-template-columns: 60% 40%;
 }
@@ -234,6 +240,11 @@ main .post-content .post-title a {
 /* ------------------------Side content--------------------- */
 
 .site-content .sidebar .popular-post .post-content {
+    background: url('4.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
     padding: 1rem 0;
 }
 
