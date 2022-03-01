@@ -607,6 +607,171 @@ form .formbutton input:hover{
     background-color: rgb(151, 151, 141);
 }
 
+.bus{
+    margin-top: 25px;
+    font-family: poppins;
+    
+}
+.topic1 p{
+    font-size: 50px;
+    color: red;
+}
+.topic1 h5{
+    font-size: 20px;
+}
+.info{
+    height: auto;
+    margin-top: 10px;
+}
+.sections{
+    background: #d32929;
+}
+#info-left{
+    float: left;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#info-right{
+    float: right;
+    width: 30%;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #d32929;
+    padding: 5px;
+    box-sizing: border-box;
+    line-height: 5em;                       
+    padding-left: 5px;
+}
+.infomiddle{
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    color: #000000;
+}
+.top{
+    font-size: 25px;
+}
+.infobottom{
+    margin-top: 20px;
+    color: #000000;
+    background: #d2e3f7;
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    padding-left: 25px;
+}
+.infobottom ul{
+    padding-left: 25px;
+}
+hr.hr1{
+    border: 2px solid red;
+}
+.top1 #deg,
+.top2 #car,
+.top3 #suc,
+.top4 #pat{
+    font-size: 25px;
+    color: #ff0000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    transition: all 0.3s erase;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.top1,
+.top2,
+.top3,
+.top4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#left-bot{
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+}
+#right-bot{
+    padding-top: 40px;
+    float: right;
+    box-sizing: border-box;
+    width: 45%;
+}
+.top2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    float: left;
+}
+.f{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.f1,.f2{
+    margin-right: 15%;
+}
+
+.top3{
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+
+    
+}
+#top3-left{
+    float: left;
+    box-sizing: border-box;
+    background-color: greenyellow;
+    width: 40%;
+}
+#top3-right h1{
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#top3-left img{
+    width:100%;
+}
+#top3-right{
+    float: right;
+    box-sizing: border-box;
+    padding-left: 10px;
+    background-color: rgb(0, 0, 0);
+    width: 60%;
+    height: 461px;
+    color: #ffffff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#top3-right p{
+    font-size: 20px;
+}
+.top4{
+    float: left;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width:800px){
     .applyform{
         max-width: 100%;
