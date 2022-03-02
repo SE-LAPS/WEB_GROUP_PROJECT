@@ -670,16 +670,16 @@ form .formbutton input:hover{
 hr.hr1{
     border: 2px solid red;
 }
-.top1 #deg,
-.top2 #car,
-.top3 #suc,
-.top4 #pat{
+ #deg,
+#car,
+#suc,
+.top4 #pat,
+.top5 h1{
     font-size: 25px;
     color: #ff0000;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 8px;
-    transition: all 0.3s erase;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -751,11 +751,72 @@ hr.hr1{
 #top3-right p{
     font-size: 20px;
 }
-.top4{
+.top4,
+.top5{
     float: left;
     width: 100%;
 }
+.top5{
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 45px;
+    padding-top: 15px;
+}
+.sections2{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    align-items: center;
+}
+#english-info{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: center;
+    background-color: #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+}
+#english-info p{
+    height: auto;
+}
+.eng1{
+    display: flex;
+    margin:10px;
+    flex-direction: column;
+    
+}
+.eng2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
+}
+.eng2 #e1{
+    width: 25%;
+    color: #6b6c6e;
+}
+.eng2 #e2
+{
+    color: #949599;
+    width: 75%;
+}
+.eng2 ul{
+    margin-left: 25%;
+    color: #949599;
+}
+#sub-top{
+    font-size: 20px;
+    color: #304363;
+}
 
 
 
