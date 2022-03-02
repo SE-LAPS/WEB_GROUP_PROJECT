@@ -242,7 +242,7 @@ main .post-content .post-title a {
 .site-content .sidebar .popular-post .post-content {
     background: url('4.gif');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: 100%;
     width: 100%;
     padding: 1rem 0;
@@ -274,6 +274,11 @@ main .post-content .post-title a {
 }
 
 .site-content .sidebar .newsletter .input-element {
+    background: url('4.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100vh;
+    width: 100%;
     width: 88%;
     height: 1.9rem;
     padding: .3rem .5rem;
