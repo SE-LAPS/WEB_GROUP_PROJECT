@@ -10,510 +10,415 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 
 
-	<style>
-
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: sans-serif;
-    background-color: #c3c4ce;
-}
-
-nav {
-    background: rgb(48, 0, 66);
-    padding: 5px 20px;
-    font-weight: 500;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.item a:hover {
-    text-decoration: none;
-    color: rgb(160, 158, 158);
-}
-
-.menu li {
-    font-size: 14px;
-    padding: 15px 5px;
-    white-space: nowrap;
-}
-
-.logo a,
-.toggle a {
-    font-size: 20px;
-}
-
-.button.secondary {
-    border-bottom: 1px #444 solid;
-}
-
-
-/* Mobile menu */
-
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.toggle {
-    order: 1;
-}
-
-.item.button {
-    order: 2;
-}
-
-.item {
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-    order: 3;
-    display: none;
-}
-
-.item.active {
-    display: block;
-}
-
-
-/* Navbar Toggle */
-
-.toggle {
-    cursor: pointer;
-}
-
-.bars {
-    background: #999;
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-}
-
-.bars:before,
-.bars:after {
-    background: #999;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-.bars:before {
-    top: 5px;
-}
-
-.bars:after {
-    top: -5px;
-}
-
-
-/* Tablet menu */
-
-@media all and (min-width: 468px) {
-    .menu {
-        justify-content: center;
-        font-weight: 500;
-    }
-    .logo {
-        flex: 1;
-    }
-    .item.button {
-        width: auto;
-        order: 1;
-        display: block;
-    }
-    .toggle {
-        order: 2;
-    }
-    .button.secondary {
-        border: 0;
-    }
-    .button a {
-        padding: 7.5px 45px;
-        color: rgb(5, 5, 49);
-        background: rgb(252, 252, 6);
-        border: 1px rgb(252, 252, 6) solid;
-        border-radius: 500rem;
-    }
-    .button.secondary a {
-        background: transparent;
-        color: #ffffff;
-    }
-    .button a:hover {
-        text-decoration: none;
-        transition: all .25s;
-        color: rgb(5, 5, 49);
-    }
-    .button:not(.secondary) a:hover {
-        background: rgba(255, 208, 0, 0.952);
-        border-color: rgba(255, 208, 0, 0.952);
-    }
-    .button.secondary a:hover {
-        color: #999;
-        border-color: #999;
-    }
-}
-
-
-/* Desktop menu */
-
-@media all and (min-width: 768px) {
-    .item {
-        display: block;
-        width: auto;
-    }
-    .toggle {
-        display: none;
-    }
-    .logo {
-        order: 0;
-    }
-    .item {
-        order: 1;
-    }
-    .button {
-        order: 2;
-    }
-    .menu li {
-        padding: 15px 12px;
-    }
-    .menu li.button {
-        padding-right: 0;
-    }
-}
-
-
-
-
-/* Desktop menu */
-
-@media all and (min-width: 768px) {
-    .item {
-        display: block;
-        width: auto;
-    }
-    .toggle {
-        display: none;
-    }
-    .logo {
-        order: 0;
-    }
-    .item {
-        order: 1;
-    }
-    .button {
-        order: 2;
-    }
-    .menu li {
-        padding: 15px 12px;
-    }
-    .menu li.button {
-        padding-right: 0;
-    }
-}
-
-
-	.blog
-	
-	{
-		text-align:center;
-		margin:30px;
-		
-	
-	}
-	
-	.education
-	{
-		text-align:center;
-	
-	}
-	.name
-	{
-		text-align:center;
-		font-size:8px;
-		margin:8px;
-		
-		
-	
-	}
-	.read
-	{
-	
-		font-size:12px;
-		text-align:center;
-		margin:15px;
-	
-	}
-	
-	.lks
-	{
-	
-		list-style:none;
-		boeder:2px solid #fff;
-		margin:30px;
-		border-radius:15px;
-	
-	}
-	
-	.btnn
-	{
-	
-		display:inline-block;
-		margin:40px;
-		padding:30px;
-		
-	}
-	
-	.topnav
-	{
-		overflow:hidden;
-		background-color:#e9e9e9;	
-	
-	}
-	
-	.topnav a
-	{
-		float:left;
-		dispaly:block;
-		color:black;
-		text-align:center;
-		padding:14px 16px;
-		text-decoration:none;
-		font-size:17px;	
-	
-	}
-	
-	.topnav a.active
-	{
-	
-		background-color:#2196F3;
-		color:white;
-	
-	}
-	
-	.topnav a.hover
-	{
-	
-		background-color:#ddd;
-		color:black;		
-	
-	}
-	
-	.topnav a.active
-	{
-	
-		background-color:#2196F3;
-		color:white;	
-	
-	}
-	
-	.topnav .search-container
-	{
-		float:right;			
-	
-	}
-	
-	.topnav input[type=text]
-	{
-	
-		padding:6px;
-		margin-top:8px;
-		font-size:17px;
-		border:none;
-	
-	}
-	
-	.topnav .search-container button
-	{
-	
-		float:right;
-		padding:6px 10px;
-		margin-top:8px;
-		margin-right:16px;
-		background:#ddd;
-		font-size:17px;
-		border:none;
-		cursor:pointer;
-	
-	
-	}
-	
-	.topnav .search-container button:hover
-	{	
-		background:#ccc;	
-	
-	}
-	
-	@media screen and (max-width:600px)
-	{
-	
-		.topnav .search-container
-		{
-			float:none;
-		
-		}
-		
-	
-	}
-	
-	
-	.topnav input[type=text]
-	{
-	
-		border:1px solid #ccc;
-	
-	}
-	
-	.technology
-	{
-	
-		position:relative;
-		
-		margin:60px;	
-	
-	}
-	
-	.para
-	{
-		margin:100px;	
-	
-	}	
-	* {
-  box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.row 
-{
-
-	margin:10px;
-
-}
-
-img.right
- {
-	float: right;
-	width:50%;
-}
-
-.box-1
-{
- background-color: lightgrey;
-  width: auto;
-  border: 5px light-blue;
-  padding: 50px;
-  margin: 10px;
- }
-
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.box
-{
-
-	border-box:2px solid black;
-
-
-}
-
-.contact
-{
-
-	text-align:center;
-	height:40px;
-	background-color:#E1E1E1;
-	padding:8px;
-	margin:10px;
-
-}
-
-.column {
-  float: left;
-  width: 32%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  
- }
- 
- .degree
- {
- 
-	margin:30px;
-	padding:30px;
- 
- }
- 
- .events
- {
- 
-	margin:30px;
-	padding:30px;
- 
- }
- 
- 
-
-
-
-	</style>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font-family: sans-serif;
+            background-color: #c3c4ce;
+        }
+        
+        nav {
+            background: rgb(48, 0, 66);
+            padding: 5px 20px;
+            font-weight: 500;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        
+        .item a:hover {
+            text-decoration: none;
+            color: rgb(160, 158, 158);
+        }
+        
+        .menu li {
+            font-size: 14px;
+            padding: 15px 5px;
+            white-space: nowrap;
+        }
+        
+        .logo a,
+        .toggle a {
+            font-size: 20px;
+        }
+        
+        .button.secondary {
+            border-bottom: 1px #444 solid;
+        }
+        /* Mobile menu */
+        
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .toggle {
+            order: 1;
+        }
+        
+        .item.button {
+            order: 2;
+        }
+        
+        .item {
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+            order: 3;
+            display: none;
+        }
+        
+        .item.active {
+            display: block;
+        }
+        /* Navbar Toggle */
+        
+        .toggle {
+            cursor: pointer;
+        }
+        
+        .bars {
+            background: #999;
+            display: inline-block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 18px;
+        }
+        
+        .bars:before,
+        .bars:after {
+            background: #999;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        
+        .bars:before {
+            top: 5px;
+        }
+        
+        .bars:after {
+            top: -5px;
+        }
+        /* Tablet menu */
+        
+        @media all and (min-width: 468px) {
+            .menu {
+                justify-content: center;
+                font-weight: 500;
+            }
+            .logo {
+                flex: 1;
+            }
+            .item.button {
+                width: auto;
+                order: 1;
+                display: block;
+            }
+            .toggle {
+                order: 2;
+            }
+            .button.secondary {
+                border: 0;
+            }
+            .button a {
+                padding: 7.5px 45px;
+                color: rgb(5, 5, 49);
+                background: rgb(252, 252, 6);
+                border: 1px rgb(252, 252, 6) solid;
+                border-radius: 500rem;
+            }
+            .button.secondary a {
+                background: transparent;
+                color: #ffffff;
+            }
+            .button a:hover {
+                text-decoration: none;
+                transition: all .25s;
+                color: rgb(5, 5, 49);
+            }
+            .button:not(.secondary) a:hover {
+                background: rgba(255, 208, 0, 0.952);
+                border-color: rgba(255, 208, 0, 0.952);
+            }
+            .button.secondary a:hover {
+                color: #999;
+                border-color: #999;
+            }
+        }
+        /* Desktop menu */
+        
+        @media all and (min-width: 768px) {
+            .item {
+                display: block;
+                width: auto;
+            }
+            .toggle {
+                display: none;
+            }
+            .logo {
+                order: 0;
+            }
+            .item {
+                order: 1;
+            }
+            .button {
+                order: 2;
+            }
+            .menu li {
+                padding: 15px 12px;
+            }
+            .menu li.button {
+                padding-right: 0;
+            }
+        }
+        /* Desktop menu */
+        
+        @media all and (min-width: 768px) {
+            .item {
+                display: block;
+                width: auto;
+            }
+            .toggle {
+                display: none;
+            }
+            .logo {
+                order: 0;
+            }
+            .item {
+                order: 1;
+            }
+            .button {
+                order: 2;
+            }
+            .menu li {
+                padding: 15px 12px;
+            }
+            .menu li.button {
+                padding-right: 0;
+            }
+        }
+        
+        .blog {
+            text-align: center;
+            margin: 30px;
+        }
+        
+        .education {
+            text-align: center;
+        }
+        
+        .name {
+            text-align: center;
+            font-size: 8px;
+            margin: 8px;
+        }
+        
+        .read {
+            font-size: 12px;
+            text-align: center;
+            margin: 15px;
+        }
+        
+        .lks {
+            list-style: none;
+            boeder: 2px solid #fff;
+            margin: 30px;
+            border-radius: 15px;
+        }
+        
+        .btnn {
+            display: inline-block;
+            margin: 40px;
+            padding: 30px;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+        
+        .topnav a {
+            float: left;
+            dispaly: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .topnav a.hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .topnav .search-container {
+            float: right;
+        }
+        
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+        
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+        
+        @media screen and (max-width:600px) {
+            .topnav .search-container {
+                float: none;
+            }
+        }
+        
+        .topnav input[type=text] {
+            border: 1px solid #ccc;
+        }
+        
+        .technology {
+            position: relative;
+            margin: 60px;
+        }
+        
+        .para {
+            margin: 100px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Create two equal columns that floats next to each other */
+        
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .row {
+            margin: 10px;
+        }
+        
+        img.right {
+            float: right;
+            width: 50%;
+        }
+        
+        .box-1 {
+            background-color: lightgrey;
+            width: auto;
+            border: 5px light-blue;
+            padding: 50px;
+            margin: 10px;
+        }
+        /* Clearfix (clear floats) */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .box {
+            border-box: 2px solid black;
+        }
+        
+        .contact {
+            text-align: center;
+            height: 40px;
+            background-color: #E1E1E1;
+            padding: 8px;
+            margin: 10px;
+        }
+        
+        .column {
+            float: left;
+            width: 32%;
+            padding: 5px;
+        }
+        /* Clearfix (clear floats) */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .degree {
+            margin: 30px;
+            padding: 30px;
+        }
+        
+        .events {
+            margin: 30px;
+            padding: 30px;
+        }
+    </style>
 
 </head>
 
 <body>
 
-	<nav>
+    <nav>
         <ul class="menu">
             <li class="logo"><img src="l2.png" alt="FreeLearn"></li>
             <li class="item"><a href="#">HOME</a></li>
-            <li class="item"><a href="#">ABOUT</a></li>
-            <li class="item"><a href="#">BLOG</a></li>
-            <li class="item"><a href="#">HELP</a></li>
+            <li class="item"><a href="About/aboutnew.html">ABOUT</a></li>
+            <li class="item"><a href="Search/searchfinal.html">BLOG</a></li>
+            <li class="item"><a href="Help/help.html">HELP</a></li>
 
-            <li class="item button"><a href="#">Log In</a></li>
-            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="item button"><a href="http://localhost/loginUpdateNew/index.html">Log In</a></li>
+            <li class="item button secondary"><a href="http://localhost/loginUpdateNew/index1.html">Sign Up</a></li>
             <li class="toggle"><span class="bars"></span></li>
         </ul>
     </nav>
@@ -527,20 +432,20 @@ img.right
     <!-- custom js link  -->
     <script src="Web_Group_Project.js"></script>
     </script>
-    
+
     <main>
         <a href="#" style="position:fixed;bottom:0;color:teal;display:block;text-align:center;font-size:1em"></a>
     </main>
-	
-	
-	<div class="blog">
-	
-		<h1>BLOG</h1>
-		
-	
-	</div>
-	
-	<p class="education">education is the manifestation of perfection<br><span>already exisiting in man</p>
+
+
+    <div class="blog">
+
+        <h1>BLOG</h1>
+
+
+    </div>
+
+    <p class="education">education is the manifestation of perfection<br><span>already exisiting in man</p>
 	<p class="name">-SWAMI VIVEKANANDA-</p>
 	
 	<p class="read">Read the latest topics of & announcement<br>and the occation events, all in one platform</p>
