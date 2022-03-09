@@ -1,0 +1,296 @@
+@import url('Home-font.css');
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    /*---------Theme colors------------------*/
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    /*---------------gradient color---------*/
+    --sky: linear-gradient(120deg, #59005cbd 10%, #fbff00 90%);
+    /*---------------theme font-family-------*/
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin: 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic: 'Livvic', cursive;
+}
+
+
+/* ---------------Classes start---------------*/
+
+a {
+    text-decoration: none;
+    color: rgb(97, 0, 73);
+    /*font-size: 1.5rem;*/
+    font-weight: bold;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    text-decoration: overline solid rgb(255, 136, 136) 10%;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 2.2rem;
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    background: #ff0000;
+    font-size: 1.1rem;
+    font-family: sanaf-serif;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container {
+    margin: 0 5vw;
+}
+
+.text-gray {
+    color: rgb(0, 0, 0)
+}
+
+p {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    color: var(--bg-color);
+}
+
+
+/* ----------------Classes end ---------------*/
+
+
+/*--------------------------------Main-part Start----------------*/
+
+
+/*----------------------Title start-----------------------------*/
+
+main .title h1,
+h3 {
+    margin: .6rem;
+    font-weight: bold;
+}
+
+main .title h1 {
+    margin: .6rem;
+    font-weight: bold;
+}
+
+
+/*------------------Title end----------------------------------*/
+
+
+/*-------------------OL Carousel--------------------------- */
+
+main .blog {
+    background: url('4.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100vh;
+    width: 100%;
+    background-size: 75%;
+    padding-top: 0rem;
+}
+
+main .blog .blog-post {
+    padding-top: 3rem;
+}
+
+main .blog-post .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(3, 100, 0, 0.356);
+}
+
+main .blog-content .blog-title {
+    padding: 2rem 0;
+}
+
+main .blog-content .btn-blog {
+    padding: .7rem 2rem;
+    background: linear-gradient( 0deg, rgb(21, 0, 78) 20%, rgb(226, 183, 255) 90%);
+    margin: .5rem;
+}
+
+section .container .owl-nav {
+    position: absolute;
+    top: 10%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+    color: rgba(0, 0, 0, 0.952);
+    font-size: .5rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    color: rgb(55, 1, 77);
+}
+
+
+/* ------------------------OL Carousel end--------------------- */
+
+
+/* ------------------------Content--------------------- */
+
+main .site-content {
+    /* background: url('4.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    padding-top: 0rem;   */
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+main .post-content {
+    width: 100%;
+}
+
+main .site-content .post-content>.post-image,
+.post-title {
+    padding: 1rem 6rem;
+    position: relative;
+}
+
+main .site-content .post-content>.post-image>div {
+    overflow: hidden;
+}
+
+main .site-content .post-content>.post-image .img {
+    width: 100%;
+    transition: all 1s ease;
+}
+
+main .site-content .post-content>.post-image .img:hover {
+    transform: scale(1.3);
+}
+
+main .post-content .post-title a {
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 1.5rem;
+    color: rgb(71, 0, 99);
+    line-height: 1.0;
+}
+
+.site-content .post-content .post-title .post-btn {
+    border-radius: 0;
+    padding: 1rem 1rem;
+    padding: 1rem 2.5rem;
+    background: var(--sky);
+}
+
+.site-content .pagination {
+    justify-content: right;
+    color: rgb(32, 0, 44);
+    margin: 4rem 0;
+}
+
+.site-content .pagination a {
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.site-content .pagination .pages {
+    background: var(--text-gray);
+    color: var(--white);
+}
+
+
+/* ------------------------Content end--------------------- */
+
+
+/* ------------------------Side content--------------------- */
+
+.site-content .sidebar .popular-post .post-content {
+    background: url('4.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2 {
+    padding-top: 8rem;
+}
+
+.site-content .sidebar .popular-post .post-info {
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.8rem !important;
+    border-radius: 0rem !important;
+    font-weight: bold !important;
+    background: rgb(255, 210, 251) 90% !important;
+}
+
+.site-content .sidebar .popular-post .post-title a {
+    font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter {
+    padding-top: 4rem;
+}
+
+.site-content .sidebar .newsletter .form-element {
+    padding: .5rem 2rem;
+}
+
+.site-content .sidebar .newsletter .input-element {
+    width: 88%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter .form-btn {
+    border-radius: 5;
+    padding: .8rem 32%;
+    margin: 1rem 0;
+    background: var(--sky);
+}
+
+
+/* ------------------------Side contente end--------------------- */
+
+
+/*--------------------------------Main-part end----------------*/

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="navbar.css">
+
+
+    <!--Google fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(219, 223, 223);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Style inputs */
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 1100px;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            margin-left: 100px;
+            resize: vertical;
+        }
+        
+        input[type=Chat] {
+            background-color: #f87b06;
+            color: white;
+            text-align: center;
+            padding: 12px 2px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        input[type=Chat]:hover {
+            background-color: #7e5200ce;
+        }
+        /*chat rectangle*/
+        
+        #left {
+            float: left;
+            background: rgb(48, 0, 66);
+            padding: 20px 20px;
+        }
+        
+        #left h3 {
+            color: floralwhite;
+        }
+        
+        #left h4 {
+            color: floralwhite;
+        }
+        /*Feedback rectangle*/
+        
+        #right {
+            float: right;
+            background: rgb(48, 0, 66);
+            padding: 20px 20px;
+        }
+        
+        #right h3 {
+            color: floralwhite;
+        }
+        
+        #right h4 {
+            color: floralwhite;
+        }
+        
+        #center {
+            position: relative;
+            left: 300px;
+        }
+        /* Style the container/contact section */
+        
+        .container {
+            border-radius: 5px;
+            padding: 5px;
+            background-image: url('11.PNG');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -2cm;
+            height: 400px;
+        }
+        /*How can we help part*/
+        
+        .container h2 {
+            text-align: left;
+            padding-top: 170px;
+            font-family: anton;
+            font-style: italic;
+            padding-left: 30px;
+            font-size: 35px;
+            letter-spacing: 1px;
+        }
+        /* Create two columns that float next to eachother */
+        
+        .column {
+            float: left;
+            width: 50%;
+            padding: 30px;
+            margin-top: 190px;
+        }
+        /*FAQ part*/
+        
+        .feq {
+            padding-left: 100px;
+            font-family: Barlow Condensed;
+            font-weight: 1000;
+            font-size: 25px;
+        }
+        /*Account Section*/
+        
+        .container-one {
+            padding-top: -100px;
+            margin-top: -100px;
+        }
+        
+        .container-one h2 {
+            padding-left: 100px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .column,
+            input[type=Chat] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  <h2>The header - Nav Bar</h2>  -->
+    <nav>
+        <ul class="menu">
+            <li class="logo"><img src="l2.png" alt="FreeLearn"></li>
+            <li class="item"><a href="Final-Project.html">Home</a></li>
+            <li class="item"><a href="About/aboutnew.html">ABOUT</a></li>
+            <li class="item"><a href="Search/searchfinal.html">BLOG</a></li>
+            <li class="item"><a href="#">HELP</a></li>
+
+            <li class="item button"><a href="http://localhost/loginUpdateNew/index.html">Log In</a></li>
+            <li class="item button secondary"><a href="http://localhost/loginUpdateNew/index1.html">Sign Up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <!--end of nav bar-->
+
+    <div class="container">
+        <div>
+            <h2>How can we help you?</h2>
+        </div>
+
+        <div class="column">
+            <form action="/action_page.php">
+                <div class="feq"><label for="fname">Frequently Asked Questions?</label></div>
+                <input type="text" id="fname" name="firstname" placeholder="eg: Scholarships,FreeLearn">
+
+
+
+                <div class="container-one">
+                    <div>
+                        <h2>FreeLearn</h2>
+                    </div>
+
+
+
+                    <!-- <label for="country">What is free learn?</label> -->
+                    <select id="country" name="country">
+          <option value="australia">What is free learn?</option>
+          <option value="australia">Free Learn is FreeLearn's very own loyalty program.By signing up to Free Learn you can get the whole syllabus of all subjects and also you can win scholarships in reputed institutions by doing exams.</option>
+        </select>
+
+                    <!--  <label for="country">How do I sign up?</label>  -->
+                    <select id="country" name="country">
+          <option value="australia">How do I sign up?</option>
+          <option value="australia">To win scholarships and do exams you shouls sign up to the FreeLearn.You can tap the sign up button on navigation bar and signup for the free learn.Note that a valid , SL based phone number or valid E-mail is required to join Free Learn.</option>
+          
+        </select>
+
+                    <!--<label for="country">Does it cost to join Free Learn?</label>  -->
+                    <select id="country" name="country">
+          <option value="australia">Does it cost to join Free Learn?</option>
+          <option value="australia">Nope.<br></br>Free Learn is FREE of charge.All you need to do is visit the site and signup.</option>
+        </select>
+
+                    <!-- <label for="country">How do I collect scholarships?</label>  -->
+                    <select id="country" name="country">
+          <option value="australia">How do I collect scholarships?</option>
+          <option value="australia">Write an exam.Then if you passed the exam you will win a scholarship.</option>
+          
+        </select>
+
+                    <!--  <label for="country">How much are my scholarships worth?</label>  -->
+                    <select id="country" name="country">
+          <option value="australia">How much are my scholarships worth?</option>
+          <option value="australia">Win a very worth scholarships to you or your loved children from the biggest online school.This worth a lot for your higher studies and for your job field in the near future. </option>
+          
+        </select>
+
+                    <!--<label for="country">How we give scholarships?</label>  -->
+                    <select id="country" name="country">
+          <option value="australia">How we give scholarships?</option>
+          <option value="australia">If you write an exam and passed we will give you a scholarship.</option>
+          
+        </select>
+
+                    <!--  <label for="country">What are the institutes that we give scholarships?</label>  -->
+                    <select id="country" name="country">
+          <option value="australia">What are the institutes that we give scholarships?</option>
+          <option value="australia">NSBM , NIBM , SLTC , SLIIT , IIT , Saegies , Udemy etc</option>
+          
+        </select>
+
+                    <!--  <label for="country">What should I do if I have more questions about free learn?</label>  -->
+                    <select id="country" name="country">
+          <option value="australia">What should I do if I have more questions about free learn?</option>
+          <option value="australia">You can ask it in the chat or you can ask it in the feedback area. </option>
+          
+        </select>
+
+                    <br></br>
+
+                    <div class="container-one">
+                        <div style="text-align:center">
+                            <h2>Account</h2>
+                        </div>
+
+
+                        <!--  <label for="country">Where can I find my scholarships?</label>  -->
+                        <select id="country" name="country">
+              <option value="australia">Where can I find my scholarships?</option>
+              <option value="australia">After you signup , you will be created an account in Free Learn. There will be your grades and scholarships.</option>
+              
+            </select>
+
+                        <!--  <label for="country">How do I change the e-mail address in my Free Learn account? </label>  -->
+                        <select id="country" name="country">
+              <option value="australia">How do I change the e-mail address in my Free Learn account?</option>
+              <option value="australia">You can create a new account instead of that.</option>
+             
+            </select>
+
+                        <!--  <label for="country">How do I reset mypassword?</label>  -->
+                        <select id="country" name="country">
+              <option value="australia">How do I reset mypassword?</option>
+              <option value="australia">Thare's an button called forget password in the Login area. From that you can change the password.</option>
+             
+            </select>
+
+
+
+                        <br> </br>
+                        <br> </br>
+
+
+
+                        <section id="center">
+                            <section id="left">
+                                <div style="text-align:center">
+                                    <br> </br>
+                                    <h3>Chat with FreeLearn</h3>
+                                    <br></br>
+                                    <h4>Ask Your Questions Here?</h4>
+                                    <br></br>
+                                    <input type="Chat" onclick="window.location.href='file:Chat&FeedBack/index.html'" value="Chat">
+
+                            </section>
+
+
+
+
+
+
+                            <section id="right">
+                                <div style="text-align:center">
+                                    <br> </br>
+                                    <h3>Questions or Feedback</h3>
+                                    <br></br>
+                                    <h4>Let us know !</h4>
+                                    <br></br>
+                                    <input type="Chat" onclick="window.location.href='file:Chat&FeedBack/index.html'" value="Give FeedBack">
+                                </div>
+                            </section>
+                        </section>
+
+
+
+
+            </form>
+            </div>
+            </div>
+
+            </div>
+
+
+
+</body>
+
+</html>

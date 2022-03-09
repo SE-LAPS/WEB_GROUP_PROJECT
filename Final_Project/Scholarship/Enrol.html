@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+
+    <link rel="stylesheet" href="scholarStyle.css">
+
+
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><img src="l2.png" alt="FreeLearn"></li>
+            <li class="item"><a href="Final-Project.html">Home</a></li>
+            <li class="item"><a href="About/aboutnew.html">ABOUT</a></li>
+            <li class="item"><a href="Search/searchfinal.html">BLOG</a></li>
+            <li class="item"><a href="Help/help.html">HELP</a></li>
+
+            <li class="item button"><a href="http://localhost/loginUpdateNew/index.html">Log In</a></li>
+            <li class="item button secondary"><a href="http://localhost/loginUpdateNew/index1.html">Sign Up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <main>
+        <a href="#" style="position:fixed;bottom:0;color:teal;display:block;text-align:center;font-size:1em"></a>
+    </main>
+
+    <div class="content" style="background-image: url(2.jpg); opacity: 0.8;">
+        <h1>Enrol Today!</h1>
+        <p>Win a chance for a free scholarship</p><br/>
+    </div>
+    <!--page devided to two sections, c2 is the class, #left is left side and #right is right-->
+    <div class="c2">
+        <!--section left-->
+        <section id="left">
+            <hr>
+            <p><a href="Courses.html">Courses and Programs</a></p>
+            <hr>
+            <p><a href="scholar.html">Enoll Now with pending A/L or O/L results</a></p>
+            <hr>
+            <p><a href="Enrol.html">Enrol Now</a></p>
+            <hr>
+            <p><a href="Howtoapply.html">How to apply</a></p>
+            <hr>
+            <p><a href="Scho.html">Scholarships</a></p>
+            <hr>
+            <p><a href="HelpContact.html">Help and Contact</a></p>
+            <hr>
+        </section>
+
+        <!--section right-->
+        <section id="right">
+
+            <!--Main topic 2, Enroll-->
+            <h4>Enoll Now </h4>
+            <section id="sub2">
+                <p>Start now and you’ll also receive</p>
+                <ul>
+                    <li>A 25% scholarship + 50% registration fee waiver guaranteed!</li>
+                    <li>Plus, up to 100% academic merit scholarships</li>
+                </ul>
+                <p>Submit your details below and one of our enrolment advisers will get back to you with next steps. <br>Enrol now!</p>
+                <h1>Leave your details below</h1>
+            </section>
+            <br>
+            <div class="applyform">
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" placeholder="Enter first name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last Name</span>
+                            <input type="text" placeholder="Enter Last name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Mobile phone contact</span>
+                            <input type="text" placeholder="Enter your number" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Course Applied For</span>
+                            <div class="container">
+
+
+                                <div class="select-box">
+                                    <div class="options-container">
+                                        <div class="option">
+                                            <input type="radio" class="radio" id="foundation" name="category" />
+                                            <label for="foundation">Foundation Studies</label>
+                                        </div>
+
+                                        <div class="option">
+                                            <input type="radio" class="radio" id="DipBuiss" name="category" />
+                                            <label for="DipBuiss">Diploma of Business</label>
+                                        </div>
+
+                                        <div class="option">
+                                            <input type="radio" class="radio" id="DipIt" name="category" />
+                                            <label for="DipIt">Diploma of Information Technology</label>
+                                        </div>
+
+                                        <div class="option">
+                                            <input type="radio" class="radio" id="DipEng" name="category" />
+                                            <label for="DipEng">Diploma of English</label>
+                                        </div>
+
+                                        <div class="option">
+                                            <input type="radio" class="radio" id="DipEngin" name="category" />
+                                            <label for="DipEngin">Diploma in Engineering</label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="selected">
+                                        <span class="details">Select course</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formbutton">
+                        <input type="submit" value="Submit">
+                    </div>
+
+                </form>
+            </div>
+
+            <br>
+
+
+        </section>
+
+    </div>
+
+    <div class="eduinst">
+        <img src="british1.png" alt="Britishway English Acadamy" style="width: 150px; margin-right: 20px;">
+        <img src="es2.png" alt="Esoft Metro Campus" style=" height: 35px; margin-right: 20px;">
+        <img src="1920px-british-council-logo.svg-.png" alt="Britishway Counsil" style="width: 120px; height: 35px; margin-right: 20px;">
+
+        <img src="IIT1.png" alt="IIT" style="  margin-right: 20px;">
+        <img src="bit.png" alt="BIT" style="  margin-right: 20px;">
+
+
+        <img src="ca.png" alt="Chartered Accounts" style="  margin-right: 20px;">
+
+        <img src="aat.png" alt="aat" style="  margin-right: 20px;">
+        <img src="cima.jpg" alt="CIMA" style="  margin-right: 20px;">
+
+
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

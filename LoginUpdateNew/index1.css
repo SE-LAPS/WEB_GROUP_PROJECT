@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(rgba(78, 78, 255, 0.5), rgba(73, 73, 73, 0.5)), url(one.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.login-box {
+    padding-top: 80px;
+    margin: 180px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 340px;
+    padding-left: 300px;
+}
+
+.login-box>div {
+    width: 900px;
+    height: 360px;
+}
+
+.login-center {
+    background-color: rgba(236, 96, 255, 0.356);
+    padding: 30px;
+}
+
+.form-control {
+    background-color: transparent !important;
+}
